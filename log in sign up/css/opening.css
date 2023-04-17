@@ -1,0 +1,119 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+
+.loader{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.element{
+    position: absolute;
+    width: 10vw;
+    height: 10vw;
+    border-radius: 50%;
+    background-color: black;
+    transition: all;
+    animation: move 2.5s ease-in-out infinite;
+    background-color: rgb(76, 178, 107);
+}
+
+.loader div:nth-child(1){
+    /* background-color: sienna; */
+    animation-delay: 0.25s;
+}
+
+.loader div:nth-child(2){
+    /* background-color: navy; */
+    animation-delay: 0.5s;
+}
+
+.loader div:nth-child(3){
+    /* background-color: gray; */
+    animation-delay: 0.75s;
+}
+
+
+.loader div:nth-child(4){
+    /* background-color: orange; */
+    animation-delay: 1s;
+}
+
+.loader div:nth-child(5){
+    /* background-color: pink; */
+    animation-delay: 1.25s;
+}
+
+
+.loader div:nth-child(6){
+    /* background-color: white; */
+    animation-delay: 1.5s;
+}
+
+.loader div:nth-child(7){
+    /* background-color: yellow; */
+    animation-delay: 1.75s;
+}
+.loader div:nth-child(8){
+    /* background-color: blue; */
+    animation-delay: 2s;
+}
+.loader div:nth-child(9){
+    /* background-color: green; */
+    animation-delay: 2.25s;
+}
+.loader div:nth-child(10){
+    /* background-color: red; */
+    animation-delay: 2.50s;
+}
+
+
+@keyframes move {
+    0%, 100%{
+        transform: translate(0);
+    }
+    10% {
+        transform: translate(15vw);
+    }
+    20% {
+        transform: translate(30vw);
+    }
+    30% {
+        transform: translate(45vw);
+    }
+    40% {
+        transform: translate(60vw);
+    }
+    50% {
+        transform: translate(75vw);
+    }
+    
+    60%{
+        transform: translate(75vw,40vh);
+    }
+    70%{
+        transform: translate(45vw,40vh);
+    }
+    80%{
+        transform: translate(30vw,40vh);
+    }
+    90%{
+        transform: translate(0vw,40vh);
+    }
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    width: 90vw;
+}

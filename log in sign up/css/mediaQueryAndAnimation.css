@@ -1,0 +1,159 @@
+@media screen and (max-height: 1005px) {
+
+    body {
+        overflow-y: scroll;
+        background-color: rgb(76, 178, 107);
+        transition: background-color 0.4s;
+    }
+
+    .floating-circle {
+        top: -300vh;
+    }
+
+    .main-container {
+        transition: all 1s;
+    }
+
+    
+}
+@media screen and (max-width: 1920px) {
+    body{
+        background-color: white;
+    }
+    .floating-circle{
+        opacity: 0;
+    }
+    .sign-in-container, .sign-up-container{
+        background-color: #0d6efd;
+    }
+    .sign-in-container,
+    .form-control,
+    .form-label,
+    .col {
+        color: #0258d8;
+    }
+    .needs-validation ,.sign-in-container , .sign-up-container,.sign-in-up, input[type=submit] {
+        width: 70vw;
+    }
+    
+}
+
+@media screen and (max-width: 900px) {
+
+    
+    .small-media {
+        transition: all 2s;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.9rem;
+    }
+
+    *{
+        font-family: monospace;
+    }
+    .remember-me{
+        flex-direction: row-reverse;
+        /* in bootstrap it the class is flex-row-reverse we can add flex-direction class in js */
+    }
+
+    /* .form-control {
+        transition: all 2s;
+        max-width: 500px;
+    } */
+
+
+    /* .new-btn {
+        width: 100%;
+    } */
+}
+
+
+
+
+
+/*
+    animation
+*/
+
+
+
+.move-up {
+    animation-name: moveUp;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    transition-property: all;
+}
+
+@keyframes moveUp {
+    0% {
+        transform: translateY(0vh);
+    }
+
+    100% {
+        transform: translateY(-150vh);
+    }
+}
+
+
+.move-down {
+    animation-name: moveDown;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+
+@keyframes moveDown {
+    0% {
+        transform: translateY(0vh);
+    }
+
+    100% {
+        transform: translateY(250vh);
+    }
+}
+
+
+.return-original {
+    animation-name: returnOriginal;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+
+@keyframes returnOriginal {
+    0% {
+        transform: translateY(250vh);
+    }
+
+    100% {
+        transform: translateY(0vh);
+    }
+}
+
+
+.return-original-down {
+    animation-name: returnOriginalDown;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+
+@keyframes returnOriginalDown {
+    0% {
+        transform: translateY(-150vh);
+    }
+
+    100% {
+        transform: translateY(0vh);
+    }
+}
+
+
+

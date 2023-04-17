@@ -1,0 +1,154 @@
+body {
+    overflow-x: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    background-color: rgb(42, 78, 53);
+    /* background-color: rgb(42, 78, 53); */
+    height: fit-content;
+    overflow-y: hidden;
+    transition: background-color 0.4s;
+}
+
+* {
+    user-select: none;
+    font-family: 'Roboto', sans-serif;
+    transition: all 0.9s;
+    text-justify: inter-word;
+}
+
+.floating-circle {
+    position: absolute;
+    /* background: white; */
+    background: rgb(76, 178, 107);
+    width: 120vw;
+    height: 120vw;
+    border-radius: 50%;
+    transition-property: top bottom;
+    transition-duration: 3s;
+    z-index: 999;
+}
+
+.up {
+    top: -230.5vh;
+    /* top: -188.5vh; */
+}
+
+.down {
+    /* top: 44vh; */
+    top: 80vh;
+}
+
+.sign-in-up {
+    width: 35vw;
+    height: 45px;
+    background-color: white;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    text-align: center;
+    background-color: rgb(76, 178, 107);
+    font-size: 2rem;
+    transition: all 1.5s;
+}
+.sign-in-container{
+    margin: auto;
+    width: 35vw;
+    height: 55px;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.sign-up-container{
+    margin: auto;
+    width: 35vw;
+    height: 55px;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    text-align: center;
+    font-size: 2rem;
+}
+
+
+.sign-in-up:hover {
+    background-color: rgb(7, 117, 40);
+    color: white;
+}
+
+.main-container {
+    padding: 40px;
+    margin-top: 20vh;
+    /* background-color: aqua; */
+}
+
+.sign-in {
+    color: white;
+    text-align: center;
+}
+
+.sign-in-container {
+    display: flex;
+    justify-content: center;
+}
+
+
+#check {
+    width: 40px;
+    height: 40px;
+}
+
+.form-label {
+    color: white;
+    font-size: 2em;
+}
+
+.col {
+    color: white;
+    font-size: 2em;
+}
+
+
+input[type=submit]:hover {
+    background: #0258d8;
+    color: white;
+}
+
+input[type=submit] {
+    width: 35vw;
+    outline: none;
+    height: 50px;
+    border: 0ch;
+    background-color: white;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    text-align: center;
+    background-color: #0d6efd;
+    font-size: 2rem;
+    transition: all 0.9s;
+}
+
+
+#sign-up {
+    display: none;
+}
+
+
+.needs-validation {
+    animation-fill-mode: forwards;
+    width: 35vw;
+}
+
+
+
+.z-index-style {
+    z-index: -132323 !important;
+}
+
+
+.form-control{
+    height: fit-content;
+    font-size: 2rem;
+}

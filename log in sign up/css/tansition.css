@@ -1,0 +1,23 @@
+
+body{
+    background-color: black;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    max-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.floating-circle {
+    position: absolute;
+    background: rgb(76, 178, 107);
+    width: 120vw;
+    height: 120vw;
+    border-radius: 50%;
+    top: 120vh;
+    transition-property: top bottom;
+    transition-duration: 1.5s;
+    z-index: -1;
+}
